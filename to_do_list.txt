@@ -1,0 +1,13 @@
+ - Create group table and mapped to jpa
+   A user can belong to different groups.
+   A group can have several users. 
+ - Create proper hashcode and equal for Bean entity
+ - entity.setId(primaryKey.longValue());
+   Shit mother fucker
+ - How we solve the Long and Integer issue ?
+   SimpleJdbcRepository.storeProcedureForUpdate()
+   SimpleJdbcRepository.executeAndReturnKey()
+   Same problem in hashcode and equal at Bean entity
+   JdbcInsertBuilder.executeAndReturnKey()
+   I have problems with the fucking BeanUtils as well    
+ - @Qualifier("ceDataSource")
